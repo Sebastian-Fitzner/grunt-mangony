@@ -7,8 +7,6 @@ This is a grunt wrapper for [`Mangony`](https://github.com/Sebastian-Fitzner/man
 
 `npm install grunt-mangony`
 
-## Usage
-
 ## Options
 
 All options of [`Mangony`](https://github.com/Sebastian-Fitzner/mangony) are available. 
@@ -21,7 +19,7 @@ You can enable this plugin in the `Gruntfile.js` of your project like that:
 
 ### Example
 
-To add a development server and a build task you can add the following configuration:
+To use a development server and a build task you can add the following configuration:
 
 ``` js
 mangony: {
