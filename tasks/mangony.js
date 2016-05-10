@@ -55,9 +55,7 @@ module.exports = function (grunt) {
 		mangony
 			.render()
 			.then(function () {
-				if (!options.watch || !options.devServer.start) {
-					done();
-				}
+				done();
 			});
 	});
 };

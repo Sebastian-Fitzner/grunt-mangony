@@ -74,6 +74,8 @@ mangony: {
 }
 ```
 
+**To keep the dev task alive you should integrate a watch task or another  `keep-alive` task.**
+
 ## License
 Copyright (c) 2016 Sebastian Fitzner. Licensed under the MIT license.
 
