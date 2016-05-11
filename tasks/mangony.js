@@ -7,6 +7,7 @@ module.exports = function (grunt) {
 		var Mangony = require('mangony');
 		var options = this.options({
 			assets: '', // Assets directory
+			collections: [],
 			compileStaticFiles: true,
 			cwd: 'src', // Set the current directory
 			debug: false,
