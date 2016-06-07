@@ -1,11 +1,17 @@
 'use strict';
 
+var deepExtend = require('deep-extend');
+
 module.exports = function (grunt) {
 	var pkg = require('../package.json');
 
 	grunt.registerMultiTask('mangony', pkg.description, function () {
 		var Mangony = require('mangony');
-		var options = this.options({
+		var defaultOptions = {
+			allow: {
+				YFMLayout: false,
+				YFMContextData: false
+			},
 			assets: '', // Assets directory
 			collections: [],
 			compileStaticFiles: true,
@@ -48,11 +54,11 @@ module.exports = function (grunt) {
 				}
 			},
 			watch: false // Enable an own watcher instance for all types
-		});
+		};
+		var options = deepExtend(defaultOptions, this.options());
 		var done = this.async();
 		var mangony = new Mangony(options);
-		var _this = this;
-
+		
 		mangony
 			.render()
 			.then(function () {
