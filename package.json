@@ -1,6 +1,6 @@
 {
   "name": "grunt-mangony",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Grunt wrapper for Mangony, another static site generator - fast, simple and powerful.",
   "homepage": "https://github.com/Sebastian-Fitzner/grunt-mangony",
   "repository": "https://github.com/Sebastian-Fitzner/grunt-mangony",
@@ -20,7 +20,7 @@
   ],
   "dependencies": {
     "deep-extend": "^0.4.1",
-    "mangony": "~1.1.7"
+    "mangony": "~1.1.9"
   },
   "devDependencies": {
     "grunt": "~1.0.0",
